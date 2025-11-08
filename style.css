@@ -1,77 +1,91 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
 }
 
+/* Body */
 body {
-  background-color: #fff;
-  color: #222;
-  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f6fb;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+/* Contact */
+.contact{
+  margin-bottom: 20px;
+}
+.contact p a{
+  color: black;
+  margin: 20px ;
+  
 }
 
+/* Main Container */
 .container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+  width: 90%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* Header */
 header {
+  background-color: #1e3a8a;
+  color: #fff;
   text-align: center;
-  margin-bottom: 40px;
+  padding: 2rem 1rem;
 }
 
 header h1 {
-  font-size: 2.2rem;
-  font-weight: 500;
-  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
 }
 
 header h1 span {
-  font-weight: 700;
-  letter-spacing: 0.5rem;
+  color: #60a5fa;
 }
 
 header .title {
-  margin-top: 10px;
-  border-top: 1px solid #ccc;
-  padding-top: 8px;
-  color: #666;
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
 }
 
+/* Layout: Sidebar + Content */
 main {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
 }
 
+/* Sidebar */
 .sidebar {
-  flex: 1 1 250px;
-  border-right: 1px solid #ccc;
-  padding-right: 20px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  background: #f1f5f9;
+  padding: 2rem;
+  border-right: 2px solid #e2e8f0;
 }
 
-.content {
-  flex: 3 1 500px;
-}
-
-.sidebar h2,
-.content h2 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  color: #333;
-}
-
-.sidebar div {
-  margin-bottom: 25px;
+.sidebar h2 {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #60a5fa;
+  display: inline-block;
+  padding-bottom: 3px;
 }
 
 .sidebar a {
-  color: #0078d4;
+  color: #2563eb;
   text-decoration: none;
 }
 
@@ -79,25 +93,115 @@ main {
   text-decoration: underline;
 }
 
-.content h3 {
+.sidebar p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills ul {
+   margin: 30px;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.skills li {
+  background: #e0f2fe;
+  color: #1e3a8a;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 4px 3px;
+  font-size: 0.9rem;
+}
+
+.education p {
+   margin: 30px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.Language ul {
+   margin: 30px;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.Language li {
+  background: #e0f2fe;
+  color: #1e3a8a;
+  padding: 6px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 4px 3px;
+  font-size: 0.9rem;
+}
+
+
+/* Main Content */
+.content {
+  flex: 2;
+  min-width: 400px;
+  padding: 2rem;
+}
+
+.content h2 {
+  color: #1e3a8a;
+  border-left: 4px solid #60a5fa;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin: 30px;
+  color: #444;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Project Section */
+.projects {
+  margin-top: 1.5rem;
+}
+
+.projects h3 {
+  color:  #1e3a8a;
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
-ul {
-  list-style: disc;
-  margin-left: 20px;
+.projects p {
+  font-size: 0.9rem;
+   margin: 30px;
+  color: #555;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+  border-left: 2px solid #e5e7eb;
 }
 
+/* Work Experience */
+.work p {
+  font-size: 0.95rem;
+  color: #555;
+   margin: 30px;
+}
+
+/* Responsive (Mobile) */
 @media (max-width: 768px) {
   main {
     flex-direction: column;
   }
+
   .sidebar {
     border-right: none;
-    padding-right: 0;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .content {
+    padding: 1.5rem;
   }
 }
