@@ -15,13 +15,12 @@ Modern blue color theme with soft shadows  <br>
 Clean, ATS-friendly structure <br>   
 # Includes sections for:
 - Profile
-- Contact Information
-- Technical Skills
+- Contact 
+- Skills
 - Education
 - Projects
-- Certifications
-- Achievements
-- Work Experience
+- Experience
+- Language
 
  **Technologies Used**
 
@@ -31,6 +30,10 @@ Clean, ATS-friendly structure <br>
 
  **How to Use**
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Anshikam0905/resume-website.git
+1. Clone the repository: <br>
+   git clone https://github.com/Anshikam0905/Digital_Resume.git <br>
+2. Go to the project folder:<br>
+  cd Digital_Resume
+3. Right click on index.html .
+4. choose open with brower.
+
